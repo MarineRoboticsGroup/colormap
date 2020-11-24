@@ -56,8 +56,7 @@ namespace colormap {
             os << long(c.val) << ' ';
             return os;
         }
-    private:
-        T val;
+      T val;
     };
 
     template <typename T, size_t N>
@@ -90,8 +89,7 @@ namespace colormap {
                 os << ch;
             return os;
         }
-    protected:
-        std::array<color<space::grayscale,T>,N> channels;
+      std::array<color<space::grayscale,T>,N> channels;
     };
 
     template <typename T>
